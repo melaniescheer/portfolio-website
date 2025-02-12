@@ -6,7 +6,8 @@
 
 body{
     margin: 0;
-    font-family: "SangBleuKingdom-Regular";
+    font-family: 'Times New Roman', Times, serif, serif;
+    font-size: 17px;
     line-height: 1.6;
 }
 
@@ -35,31 +36,42 @@ header{
     right: 0;
     bottom: 0;
     padding-left: 5px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
 }
 
 h1 {
-    font-family: "SangBleuKingdom-Medium";
+    font-family: 'Times New Roman', Times, serif, serif;
+    font-style: bold;
     font-weight: 100;
 }
 
 h2 {
-    font-family: "SangBleuKingdom-MediumItalic";
+    font-family: 'Times New Roman', Times, serif, serif;
+    font-style: bold;
     font-weight: 100;
 }
 
 h4 {
     padding-bottom: 0;
     margin-bottom: 0;
-    font-family: "SangBleuKingdom-MediumItalic";
+    font-family: 'Times New Roman', Times, serif, serif;
+    font-style: italic;
     font-weight: 100;
 }
 
 p {
+    font-family: 'Times New Roman', Times, serif, serif;
     padding-top: 0;
     margin-top: 0;
 }
 
+li {
+    font-family: 'Times New Roman', Times, serif, serif;
+}
+
+a {
+    font-family: 'Times New Roman', Times, serif, serif;
+}
 
 /* Random Image */
 

@@ -23,101 +23,15 @@
 <body>
 
     <!--div with random image-->
-    <div onclick="window.location='index.html';" style="cursor:pointer;" class="image-random" id="image-random"></div>
-
-    <!--new image on refresh-->
-    <script>
-        var images = [
-            'melanie_scheer_design_buchbinden_workshop.jpg', 
-            'melanie_scheer_design_illustration_herz.jpg', 
-            'melanie_scheer_design_intergeschlechtlichkeit.jpg', 
-            'melanie_scheer_design_irmgard_1.jpg', 
-            'melanie_scheer_design_irmgard_2.jpg', 
-            'melanie_scheer_design_jgu_gender.png', 
-            'melanie_scheer_design_mentales_visualisieren_1.jpg', 
-            'melanie_scheer_design_mentales_visualisieren_2.jpg', 
-            'melanie_scheer_design_mentales_visualisieren_3.jpg', 
-            'melanie_scheer_design_mentales_visualisieren_4.jpg', 
-            'melanie_scheer_design_mentales_visualisieren_5.jpg', 
-            'melanie_scheer_design_mentales_visualisieren_6.jpg', 
-            'melanie_scheer_design_mentales_visualisieren_7.jpg', 
-            'melanie_scheer_design_milli.jpg',
-            'melanie_scheer_design_notizbuch1.jpg', 
-            'melanie_scheer_design_notizbuch2.jpg', 
-            'melanie_scheer_design_notizbuch3.jpg', 
-            'melanie_scheer_design_notizbuch4.jpg', 
-            'melanie_scheer_design_notizbuch5.jpg', 
-            'melanie_scheer_design_palucca_tanzt_1.jpg', 
-            'melanie_scheer_design_palucca_tanzt_2.jpg', 
-            'melanie_scheer_design_perMA.jpg', 
-            'melanie_scheer_design_photoalbum.jpg', 
-            'melanie_scheer_design_postkarte_buchbinden.jpg',
-            'melanie_scheer_design_riso_mythologie.jpg', 
-            'melanie_scheer_design_saturn_zine.jpg', 
-            'melanie_scheer_design_solitaire.png', 
-            'melanie_scheer_design_the_comet.jpg', 
-            'melanie_scheer_design_zwillingsbuch_1.jpg', 
-            'melanie_scheer_design_zwillingsbuch_2.jpg' 
-        ];
-       
-        // get already shown images out of localStorage
-        var displayedImages = JSON.parse(localStorage.getItem('displayedImages')) || [];
-        console.log("Angezeigte Bilder aus localStorage:", displayedImages);
-
-        // pick a random image that was not shown already
-        function getNextImage() {
-            // filter out images that were shown already
-            var remainingImages = images.filter(function(img) {
-                return !displayedImages.includes(img);
-            });
-            console.log("Verbleibende Bilder:", remainingImages);
-
-            // restart cycle after every image were shown
-            if (remainingImages.length === 0) {
-                console.log("Alle Bilder wurden angezeigt. Zurücksetzen...");
-                displayedImages = [];
-                localStorage.removeItem('displayedImages');
-                remainingImages = images; // every image is available again
-            }
-
-            // pick a random image out of the remaining images
-            var randomImage = remainingImages[Math.floor(Math.random() * remainingImages.length)];
-            console.log("Gewähltes Bild:", randomImage);
-
-            // add the shown image to the list
-            displayedImages.push(randomImage);
-
-            // save to status in localStorage
-            localStorage.setItem('displayedImages', JSON.stringify(displayedImages));
-
-            return randomImage;
-        }
-
-        // get the next image
-        var nextImage = getNextImage();
-        console.log("Nächstes Bild:", nextImage);
-
-        // display image in div
-        var imgElement = document.createElement('img');
-        imgElement.src = 'images/' + nextImage;
-        console.log("Bild-Element:", imgElement);
-
-        var imageRandomDiv = document.getElementById('image-random');
-        if (imageRandomDiv) {
-            imageRandomDiv.appendChild(imgElement);
-        } else {
-            console.log("Div mit id 'image-random' nicht gefunden.");
-        }
-    </script>
-
-    <noscript>
+    <div class="image-random" id="image-random">
         <img src="images/melanie_scheer_design_mentales_visualisieren_1.jpg">
-    </noscript>
+    </div>
+
 
     <!--footer-->
     <div class="footer">
         <ul>
-            <li class="footer-links"><a href="info.html">Info & Kontakt</a></li>
+            <li class="footer-links"><p>Website in Bearbeitung.</p></li>
             <li class="footer-links"><a href="impressum.html">Impressum</a></li>
             <li class="footer-links"><a href="datenschutz.html">Datenschutz</a></li>
             <li class="footer-credit">&copy; <script>document.write(new Date().getFullYear());</script> Melanie Scheer</li>
