@@ -7,7 +7,7 @@
 @font-face {
 	font-family: "SangBleuKingdomRegular"; /* Name der Schrift */
 	src:
-		url("fonts/SangBleuKingdom-Regular-WebXL.woff2") format("woff2")
+		url("/fonts/SangBleuKingdom-Regular-WebXL.woff2") format("woff2")
 	font-weight: normal;
 	font-style: normal;
 }
@@ -15,7 +15,7 @@
 @font-face {
 	font-family: "SangBleuKingdomRegularItalic"; /* Name der Schrift */
 	src:
-		url("fonts/SangBleuKingdom-RegularItalic-WebXL.woff2") format("woff2")
+		url("/fonts/SangBleuKingdom-RegularItalic-WebXL.woff2") format("woff2")
 	font-weight: normal;
 	font-style: italic;
 }
@@ -23,7 +23,7 @@
 @font-face {
 	font-family: "SangBleuKingdomMediumItalic"; /* Name der Schrift */
 	src:
-		url("fonts/SangBleuKingdom-MediumItalic-WebXL.woff2") format("woff2")
+		url("/fonts/SangBleuKingdom-MediumItalic-WebXL.woff2") format("woff2")
 	font-weight: normal;
 	font-style: italic;
 }
