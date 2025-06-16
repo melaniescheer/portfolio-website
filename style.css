@@ -1,303 +1,294 @@
 /* General */
 
-*{
-    box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'SangBleuKingdomRegular'; /* Name der Schrift */
-    src: url('fonts/SangBleuKingdom-Regular-WebXL.woff2') format('woff2'),
-         url('fonts/SangBleuKingdom-Regular-WebXL.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
+	font-family: "SangBleuKingdomRegular"; /* Name der Schrift */
+	src:
+		url("/fonts/SangBleuKingdom-Regular-WebXL.woff2") format("woff2")
+	font-weight: normal;
+	font-style: normal;
+}
 
 @font-face {
-    font-family: 'SangBleuKingdomRegularItalic'; /* Name der Schrift */
-    src: url('fonts/SangBleuKingdom-RegularItalic-WebXL.woff2') format('woff2'),
-         url('fonts/SangBleuKingdom-RegularItalic-WebXL.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-  }  
+	font-family: "SangBleuKingdomRegularItalic"; /* Name der Schrift */
+	src:
+		url("/fonts/SangBleuKingdom-RegularItalic-WebXL.woff2") format("woff2")
+	font-weight: normal;
+	font-style: italic;
+}
 
-  @font-face {
-    font-family: 'SangBleuKingdomMediumItalic'; /* Name der Schrift */
-    src: url('fonts/SangBleuKingdom-MediumItalic-WebXL.woff2') format('woff2'),
-         url('fonts/SangBleuKingdom-MediumItalic-WebXL.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-  } 
-
+@font-face {
+	font-family: "SangBleuKingdomMediumItalic"; /* Name der Schrift */
+	src:
+		url("/fonts/SangBleuKingdom-MediumItalic-WebXL.woff2") format("woff2")
+	font-weight: normal;
+	font-style: italic;
+}
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
 
-    font-family: 'SangBleuKingdomRegular', 'Times New Roman', Times, serif;
-    font-size: 16px;
-    line-height: 1.8;
+	font-family: "SangBleuKingdomRegular", "Times New Roman", Times, serif;
+	font-size: 16px;
+	line-height: 1.8;
 }
 
 header {
-    position: fixed;
-    padding-top: 40px;
-    padding-left: 40px;
-    width: 33%; 
-    z-index: 3;
+	position: fixed;
+	padding-top: 40px;
+	padding-left: 40px;
+	width: 33%;
+	z-index: 3;
 }
 
-.design {    
-    position: fixed; /* fixiert die Position auf der Seite */
-    bottom: 10%; /* Platzierung im unteren Drittel (33% von unten) */
-    right: 40px; /* Abstand vom rechten Rand */
-    width: 29%; /* definierte Breite */
-    z-index: 2
+.design {
+	position: fixed; /* fixiert die Position auf der Seite */
+	bottom: 10%; /* Platzierung im unteren Drittel (33% von unten) */
+	right: 40px; /* Abstand vom rechten Rand */
+	width: 29%; /* definierte Breite */
+	z-index: 2;
 }
 
 .footer {
-    margin-top: auto; /* sorgt dafür, dass der Footer immer unten ist */
-    text-align: left; /* sorgt dafür, dass der Text nach links ausgerichtet ist */
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    padding: 50px;
-    padding-bottom: 35px;
-    box-sizing: border-box; /* stellt sicher, dass Padding nicht zur Breite hinzugefügt wird */
+	margin-top: auto; /* sorgt dafür, dass der Footer immer unten ist */
+	text-align: left; /* sorgt dafür, dass der Text nach links ausgerichtet ist */
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	padding: 50px;
+	padding-bottom: 35px;
+	box-sizing: border-box; /* stellt sicher, dass Padding nicht zur Breite hinzugefügt wird */
 }
 
-.footer-list { 
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Listenelemente nebeneinander */
-    justify-content: flex-start;
+.footer-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex; /* Listenelemente nebeneinander */
+	justify-content: flex-start;
 }
 
 .footer-list li {
-    margin-right: 40px; /* Abstand zwischen den Listenelementen */
-  }
-
+	margin-right: 40px; /* Abstand zwischen den Listenelementen */
+}
 
 /* Schrift */
 
 h1 {
-    font-family: 'SangBleuKingdomRegular', 'Times New Roman', Times, serif;
-    font-weight: 100;
+	font-family: "SangBleuKingdomRegular", "Times New Roman", Times, serif;
+	font-weight: 100;
 }
 
 h2 {
-    font-family: 'SangBleuKingdomRegular', 'Times New Roman', Times, serif;
-    font-weight: 100;
+	font-family: "SangBleuKingdomRegular", "Times New Roman", Times, serif;
+	font-weight: 100;
 }
 
 h4 {
-    padding-bottom: 0;
-    margin-bottom: 0;
-    font-family: 'SangBleuKingdomMediumItalic', 'Times New Roman', Times, serif;
-    font-weight: 500;
-    font-style: italic;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	font-family: "SangBleuKingdomMediumItalic", "Times New Roman", Times, serif;
+	font-weight: 500;
+	font-style: italic;
 }
 
 p {
-    padding-top: 0;
-    margin-top: 0;
-    font-family: 'SangBleuKingdomRegular', 'Times New Roman', Times, serif;
+	padding-top: 0;
+	margin-top: 0;
+	font-family: "SangBleuKingdomRegular", "Times New Roman", Times, serif;
 }
 
 li {
-    font-family: 'SangBleuKingdomRegular', 'Times New Roman', Times, serif;
+	font-family: "SangBleuKingdomRegular", "Times New Roman", Times, serif;
 }
 
 a {
-    font-family: 'SangBleuKingdomRegular', 'Times New Roman', Times, serif;
+	font-family: "SangBleuKingdomRegular", "Times New Roman", Times, serif;
 }
 
 em {
-    font-family: 'SangBleuKingdomRegularItalic', 'Times New Roman', Times, serif;
-    font-style: italic;
+	font-family:
+		"SangBleuKingdomRegularItalic", "Times New Roman", Times, serif;
+	font-style: italic;
 }
 
 ::selection {
-    background-color: #d2b4ff; /* lila Highlight */
-    color: black;              /* schwarzer Text */
-  }
-
+	background-color: #d2b4ff; /* lila Highlight */
+	color: black; /* schwarzer Text */
+}
 
 /* Links */
 
-a:link { 
-    text-decoration: none; 
-    color: black;
+a:link {
+	text-decoration: none;
+	color: black;
 }
 
-a:visited { 
-    text-decoration: none; 
-    color: black;
+a:visited {
+	text-decoration: none;
+	color: black;
 }
 
-a:hover { 
-    text-decoration: underline; 
-    color: black;
+a:hover {
+	text-decoration: underline;
+	color: black;
 }
 
-a:active { 
-    text-decoration: none; 
-    color: black;
+a:active {
+	text-decoration: none;
+	color: black;
 }
-
 
 /* Random Image */
 
 .image-random {
-    position: fixed;
-    top: 15%;
-    bottom: 15%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 60%;
-    height: auto; /* Die Höhe bleibt automatisch, damit das Bild nicht gestreckt wird */
-
-} 
-
-.image-random img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+	position: fixed;
+	top: 15%;
+	bottom: 15%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 60%;
+	height: auto; /* Die Höhe bleibt automatisch, damit das Bild nicht gestreckt wird */
 }
 
+.image-random img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
 
 /* Info, Datenschutz, Impressum */
 
 .text {
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	text-wrap: pretty;
 }
 
 .text img {
-    height: 60vh;
+	height: 60vh;
 }
-
 
 /* Kleinere Bildschirme */
 
 @media (max-width: 1000px) {
-    header{
-        position: fixed;
-        padding-top: 40px;
-        padding-left: 40px;
-        width: 35%; 
-        z-index: 3;
-    }
+	header {
+		position: fixed;
+		padding-top: 40px;
+		padding-left: 40px;
+		width: 35%;
+		z-index: 3;
+	}
 
-    .design {    
-        position: fixed; 
-        bottom: 13%; 
-        padding-right: 0px;
-        float: right;
-        width: 31%;
-        z-index: 2;
-    }
+	.design {
+		position: fixed;
+		bottom: 13%;
+		padding-right: 0px;
+		float: right;
+		width: 31%;
+		z-index: 2;
+	}
 
-    .image-random {
-        position: fixed;
-        top: 25%;
-        bottom: 25%;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 80%;
-    } 
-  }
-
+	.image-random {
+		position: fixed;
+		top: 25%;
+		bottom: 25%;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 80%;
+	}
+}
 
 @media (max-width: 800px) {
-    header{
-        width: 50%; 
-    }
+	header {
+		width: 50%;
+	}
 
-    .design {    
-        position: fixed; 
-        top: 10%; 
-        padding-right: 0px;
-        float: right;
-        width: 43%;
-        z-index: 1;
-    }
+	.design {
+		position: fixed;
+		top: 10%;
+		padding-right: 0px;
+		float: right;
+		width: 43%;
+		z-index: 1;
+	}
 
-    .image-random {
-        top: 35%;
-        bottom: 25%;
-        z-index: 2;
-    }
+	.image-random {
+		top: 35%;
+		bottom: 25%;
+		z-index: 2;
+	}
 
+	.footer {
+		padding: 40px;
+		padding-bottom: 30px;
+		box-sizing: border-box;
+	}
 
-    .footer {
-        padding: 40px;
-        padding-bottom: 30px;
-        box-sizing: border-box; 
-    }
+	.footer-list {
+		flex-direction: column; /* Listenelemente untereinander */
+		align-items: flex-start;
+	}
 
-    .footer-list {
-        flex-direction: column; /* Listenelemente untereinander */
-        align-items: flex-start;
-      }
-    
-    .footer-list li {
-        margin-bottom: 0px; /* Abstand zwischen den Listenelementen */
-      }
-  }
-
+	.footer-list li {
+		margin-bottom: 0px; /* Abstand zwischen den Listenelementen */
+	}
+}
 
 @media (max-width: 480px) {
-    header{
-        position: fixed;
-        padding-top: 20px;
-        padding-left: 20px;
-        width: 60%; 
-        z-index: 3;
-    }
+	header {
+		position: fixed;
+		padding-top: 20px;
+		padding-left: 20px;
+		width: 60%;
+		z-index: 3;
+	}
 
-    .design {    
-        position: fixed; 
-        top: 10%; 
-        padding-right: 20px;
-        float: right;
-        width: 60%;
-        z-index: 1;
-    }
+	.design {
+		position: fixed;
+		top: 10%;
+		padding-right: 20px;
+		float: right;
+		width: 60%;
+		z-index: 1;
+	}
 
-    .footer {
-        padding: 30px;
-        box-sizing: border-box; 
-    }
+	.footer {
+		padding: 30px;
+		box-sizing: border-box;
+	}
 
-    .image-random {
-        position: fixed;
-        top: 33%;
-        bottom: 33%;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 85%;
-        z-index: 2;
-    } 
+	.image-random {
+		position: fixed;
+		top: 33%;
+		bottom: 33%;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 85%;
+		z-index: 2;
+	}
 
-    .text {
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-top: 7%;
-        padding-bottom: 20%;
-    }
+	.text {
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-top: 7%;
+		padding-bottom: 20%;
+	}
 
-    .text img {
-        padding-left: 0%;
-        width: 50vw;
-        height: auto;
-        
-    }
+	.text img {
+		padding-left: 0%;
+		width: 50vw;
+		height: auto;
+	}
 }
